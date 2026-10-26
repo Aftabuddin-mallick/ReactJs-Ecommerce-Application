@@ -12,7 +12,7 @@ const Products = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
   const [loading, setLoading] = useState(false);
-  let componentMounted = true;
+ 
 
   const dispatch = useDispatch();
 
@@ -20,23 +20,31 @@ const Products = () => {
     dispatch(addCart(product));
   };
 
-  useEffect(() => {
-    const getProducts = async () => {
-      setLoading(true);
-      const response = await fetch("https://fakestoreapi.com/products/");
-      if (componentMounted) {
-        setData(await response.clone().json());
-        setFilter(await response.json());
-        setLoading(false);
-      }
+useEffect(() => {
+let componentMounted = true;
 
-      return () => {
-        componentMounted = false;
-      };
-    };
+const getProducts = async () => {
+setLoading(true);
 
-    getProducts();
-  }, []);
+
+const response = await fetch("https://fakestoreapi.com/products/");
+
+if (componentMounted) {
+  const products = await response.json();
+  setData(products);
+  setFilter(products);
+  setLoading(false);
+}
+
+
+};
+
+getProducts();
+
+return () => {
+componentMounted = false;
+};
+}, []);
 
   const Loading = () => {
     return (
