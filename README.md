@@ -1,17 +1,43 @@
 # Shopwise: E-Commerce Store with Admin Panel
 
-React + Vite + Tailwind CSS v4 + React Router. Data and auth come from the free DummyJSON API.
+React + Vite + Tailwind CSS v4 + React Router. Data and authentication come from the free DummyJSON API.
 
-## Run locally
-    npm install
-    npm run dev
+## Run Locally
 
-## Deploy
-Vercel/Netlify: import the repo (or drag the folder). Build command `npm run build`, output `dist`. SPA redirects are already configured.
+```bash
+npm install
+npm run dev
+```
 
-## Demo logins
-- Admin: `emilys` / `emilyspass`
-- Customer: `michaelw` / `michaelwpass`
+## Demo
+
+[Click here to view the live application](https://react-js-ecommerce-application.vercel.app/)
+
+## Deployment
+
+Vercel/Netlify: Import the repository (or drag the project folder).
+
+- Build command: `npm run build`
+- Output directory: `dist`
+
+SPA redirects are already configured.
+
+## Demo Logins
+
+- **Admin:** `emilys` / `emilyspass`
+- **Customer:** `michaelw` / `michaelwpass`
 
 ## Features
-Login (JWT) · protected and role-based routes · cart with useReducer + localStorage · search, category filter, sort · pagination · form validation · loading skeletons · error handling with retry · responsive UI · admin product add/delete.
+
+- Login with JWT authentication
+- Protected and role-based routes
+- Shopping cart using useReducer and localStorage
+- Product search
+- Category filtering
+- Product sorting
+- Pagination
+- Form validation
+- Loading skeletons
+- Error handling with retry
+- Responsive UI
+- Admin product add/delete functionality
