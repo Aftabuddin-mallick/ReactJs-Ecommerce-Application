@@ -1,41 +1,68 @@
-# Shopwise: E-Commerce Store with Admin Panel
+# E-Commerce Website
 
-React + Vite + Tailwind CSS v4 + React Router. Data and authentication come from the free DummyJSON API.
+A Ecommerce Website made with React.js Framework.
+
 
 ## Demo
 
-[View the live application](https://react-js-ecommerce-application.vercel.app/)
+
 
 ## Features
 
-- Login with JWT authentication
-- Protected and role-based routes
-- Shopping cart using useReducer and localStorage
-- Product search, category filtering and sorting
-- Pagination
-- Form validation
-- Loading skeletons
-- Error handling with retry
-- Responsive UI
-- Admin product add/delete (simulated by the demo API)
+- Easy to integrate with Backend
+- Fully Responsive
 
-## Demo Logins
 
-- **Admin:** `emilys` / `emilyspass`
-- **Customer:** `michaelw` / `michaelwpass`
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/fQ293tm/image.png)
+
+
 
 ## Run Locally
 
+Clone the project
+
 ```bash
-npm install
-npm run dev
+  git clone https://github.com/ssahibsingh/React_E-Commerce
 ```
 
-## Deployment
+Go to the project directory
 
-Vercel/Netlify: import the repository (or drag the project folder).
+```bash
+  cd React_E-Commerce
+```
 
-- Build command: `npm run build`
-- Output directory: `dist`
+Install dependencies
 
-SPA redirects are already configured.
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
+
+
+
+## Tech Stack
+
+* [React](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Fake Store API](https://fakestoreapi.com/)
+
+## Contributing
+
+Contributions are always welcome!
+Just raise an issue, we will discuss it.
+
+
+## Feedback
+
+If you have any feedback, please reach out to me [here](https://github.com/Aftabuddin-mallick)
+
+
+"# ReactJs-Ecommerce-Application" 
