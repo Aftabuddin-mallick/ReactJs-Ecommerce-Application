@@ -1,68 +1,17 @@
-# E-Commerce Website
+# Shopwise: E-Commerce Store with Admin Panel
 
-A Ecommerce Website made with React.js Framework.
+React + Vite + Tailwind CSS v4 + React Router. Data and auth come from the free DummyJSON API.
 
+## Run locally
+    npm install
+    npm run dev
 
-## Demo
+## Deploy
+Vercel/Netlify: import the repo (or drag the folder). Build command `npm run build`, output `dist`. SPA redirects are already configured.
 
-
+## Demo logins
+- Admin: `emilys` / `emilyspass`
+- Customer: `michaelw` / `michaelwpass`
 
 ## Features
-
-- Easy to integrate with Backend
-- Fully Responsive
-
-
-## Screenshots
-
-![App Screenshot](https://i.ibb.co/fQ293tm/image.png)
-
-
-
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/ssahibsingh/React_E-Commerce
-```
-
-Go to the project directory
-
-```bash
-  cd React_E-Commerce
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm start
-```
-
-
-
-## Tech Stack
-
-* [React](https://reactjs.org/)
-* [Redux](https://redux.js.org/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Fake Store API](https://fakestoreapi.com/)
-
-## Contributing
-
-Contributions are always welcome!
-Just raise an issue, we will discuss it.
-
-
-## Feedback
-
-If you have any feedback, please reach out to me [here](https://github.com/Aftabuddin-mallick)
-
-
-"# ReactJs-Ecommerce-Application" 
+Login (JWT) · protected and role-based routes · cart with useReducer + localStorage · search, category filter, sort · pagination · form validation · loading skeletons · error handling with retry · responsive UI · admin product add/delete.
